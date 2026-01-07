@@ -27,42 +27,33 @@ CleanArchitecture.Pro.sln
 Domain
 
 Pure business logic
-
 No external dependencies
-
 Example: Order, Customer, Invoice
 
 Application
 
 Orchestrates use cases
-
 Interfaces for repositories/services
-
 Example: CreateOrderHandler, GetCustomerQuery
 
 Infrastructure
 
 Implements interfaces from Application
-
 Database (EF Core, Dapper), logging, email, etc.
-
 Example: OrderRepository, CustomerRepository
 
 API
 
 Entry point (ASP.NET Core Web API)
-
 Controllers → MediatR → Application layer
-
 Example: OrdersController, CustomersController
 
 Tests
 
 Unit tests for Domain & Application
-
 Integration tests for Infrastructure & API
 
-🚀 Bootstrapping Commands
+🚀 Bootstrapping Commands - start application with command
 
 
 dotnet new sln -n CleanArchitecture.Pro
