@@ -79,7 +79,7 @@ dotnet sln add CleanArchitecture.Pro.Infrastructure/CleanArchitecture.Pro.Infras
 dotnet sln add CleanArchitecture.Pro.Api/CleanArchitecture.Pro.Api.csproj
 dotnet sln add CleanArchitecture.Pro.Tests/CleanArchitecture.Pro.Tests.csproj
 
-🛠 Add the Reference
+🛠 Added the References
 
 dotnet add CleanArchitecture.Pro.Api/CleanArchitecture.Pro.Api.csproj reference CleanArchitecture.Pro.Application/CleanArchitecture.Pro.Application.csproj
 
@@ -108,29 +108,31 @@ dotnet list CleanArchitecture.Pro.Tests/CleanArchitecture.Pro.Tests.csproj refer
 
 
 
-
-
-
-
 🛠️ Extras to Consider
 
-MediatR for CQRS-style request/response handling
-FluentValidation for input validation
-Swagger/OpenAPI for API documentation
-EF Core Migrations for database setup
-Serilog for logging
 
+1 Clean Architecture
 
+	CleanArchitecture.Pro.Domain
+	CleanArchitecture.Pro.Application
+	CleanArchitecture.Pro.Infrastructure
+	CleanArchitecture.Pro.Api
+	CleanArchitecture.Pro.Tests
 
-Sample project with 
+2 Performance, Scaling & Deployment Guide
+3 SOLID principal 
+4 Writing real use-cases using CQRS ( ( and also singleton , factory pattern , Repositories pattern ) MediatR for CQRS-style request/response handling
+5 Secure Authentication (JWT + Roles + Policies)
+6 Azure Services like key valut , azure function , azure storage
+7 MS SQL + EF Core Strategy
+8 Enterprise Logging, Validation & Error Handling
+9 CI/CD, Docker & Cloud Readiness( Dev , QA , Prod)
+10 Swagger/OpenAPI for API documentation
+11 FluentValidation for input validation
+12 EF Core Migrations for database setup
+13 Real Architectural Thinking & Decision Making
+14 Azure Deployment activity  ( Azure app service , zero downtime , loadbalancer )
 
-0 Clean Architecture
-1 best performance and scalablity
-2 solid principal 
-3 common design pattern
-4 Azure Services like key valut , azure function , azure storage , deployment
-5 CI / CD with proper staging ( Dev , QA , Prod) and zero downtime
-6 JWT
 
 
 
